@@ -38,12 +38,9 @@ public class Polynomial{
 		for(int i = 0; i < coefficients.length; i++){
 		    double coefProd = 1;
 		    for(int k = 0; k < i; k++){
-    		    coefProd*=x;
-		        //System.out.println("curr coefficient product: "+coefProd);
-    		}
-    		sum+=(coefficients[i]*coefProd);
-    		//System.out.print("curr sum: "+sum);
-    		//System.out.println(" curr coefficient: "+coefficients[i]+"\n");
+	    		    coefProd*=x;
+	    	    }
+	    	    sum+=(coefficients[i]*coefProd);
 		}
 		return sum;
 	}
